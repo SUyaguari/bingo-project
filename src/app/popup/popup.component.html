@@ -1,0 +1,24 @@
+<div class="fondo">
+
+  <div class="prueba"></div>
+  <div class="container">
+    <div class="popup-container">
+    
+  
+      <div class="image-container">
+        <img src="{{ img.url }}" alt="Imagen" *ngIf="isLooping; else noLoop" [@centerAnimation]="isImageVisible ? 'visible' : 'hidden'" />
+        <ng-template #noLoop>
+          <img src="{{ img.url }}" alt="Imagen" [@centerAnimation]="'visible'" />
+        </ng-template>
+      </div>
+      
+    
+    </div>
+  </div>
+  <div class="prueba containercito">
+    <button class="btn btn-primary" (click)="toggleLoop()">
+      {{ isLooping ? 'Detener bucle' : 'Iniciar bucle' }}
+    </button>  
+  </div>
+
+</div>

@@ -1,0 +1,67 @@
+.letra{
+    font-size: xx-large;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+}
+
+.centrarsito{
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  // align-items: center;
+}
+
+.centarRifa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    height: 535px;
+}
+
+.rifa{
+    height: 370px;
+}
+
+.btn{
+    margin-left: 5px;
+}
+
+.table {
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.table thead th,
+.table tbody td {
+  background-color: transparent;
+  border: none;
+}
+
+  body {
+    background-image: url("../assets/decoration/FONDOgrande.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+  }
+
+  .carta:hover{
+    box-shadow: 0 0 10PX #666;
+    transform: scale(2);
+  }
+
+  .margin{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
